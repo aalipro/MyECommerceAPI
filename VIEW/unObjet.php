@@ -1,0 +1,3 @@
+<?php
+	$objet->afficher();
+?>
