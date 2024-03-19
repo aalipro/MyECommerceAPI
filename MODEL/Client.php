@@ -1,17 +1,22 @@
 <?php
     Class Client extends Objet{
-        protected $mailClient;
-        protected $mdpClient;
-        protected $nomClient;
-        protected $pseudoClient;
-        protected $prenomClient;
-        protected $dateNaissanceClient;
-        protected $adresseCompleteClient;
-        protected $telephoneClient;
-        
+        public $mailClient;
+        public $mdpClient;
+        public $nomClient;
+        public $pseudoClient;
+        public $prenomClient;
+        public $dateNaissanceClient;
+        public $adresseCompleteClient;
+        public $idAdresse;
+        // public $telephoneClient;
+        // public $type ="Client";
+
         protected static $objet = "Client";
 		protected static $cle = "mailClient";
 
+        public static function inscription(){
+            return static::POST();
+        }
         public function addComm($note, $comm, $idRdv, $adresseMail) {
             $requetePreparee = "INSERT INTO Avis Values(:tag_note, :tag_comm, :tag_id, :tag_adrMail);";
 		    $req_prep = Connexion::pdo()->prepare($requetePreparee);

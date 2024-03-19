@@ -3,4 +3,3 @@
         protected static $objet = "Client";
 		protected static $cle = "mailClient";
     }
-?>

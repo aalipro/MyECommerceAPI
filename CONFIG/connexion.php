@@ -2,9 +2,9 @@
 class Connexion {
   // les attributs static caractéristiques de la connexion
 	static protected $hostname = 'localhost';
-	static protected $database = 'aali';     // votre id court
-	static protected $login = 'aali';         // votre id court
-	static protected $password = '=_xDfD<?wg}LAV;*y67U'; // votre mdp
+	static protected $database = 'apiecommerce';     // votre id court prj-prism
+	static protected $login = 'prj-prism';         // votre id court prj-prism
+	static protected $password = 'Prism2022'; // votre mdp yily2ytpMqkGz4nP
 
   static protected $tabUTF8 = array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8");
 
